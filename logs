@@ -1,0 +1,250 @@
+[34mDEBUG[39m	 [2020-10-10 05:28:49.144 +0000] (github-crawler/20040 on DESKTOP-9IG2DCJ): [36mremaining limit': 4993[39m
+    line: 1
+[34mDEBUG[39m	 [2020-10-10 05:28:51.145 +0000] (github-crawler/20040 on DESKTOP-9IG2DCJ): [36mremaining limit': 4992[39m
+    line: 2
+[34mDEBUG[39m	 [2020-10-10 05:28:52.384 +0000] (github-crawler/20040 on DESKTOP-9IG2DCJ):
+    line: 3
+    Number of user: 0
+    Remaining limit: "28"
+    Login: "vladilenm"
+[34mDEBUG[39m	 [2020-10-10 05:28:55.765 +0000] (github-crawler/20040 on DESKTOP-9IG2DCJ):
+    line: 4
+    Number of user: 1
+    Remaining limit: "27"
+    Login: "sergeche"
+[34mDEBUG[39m	 [2020-10-10 05:30:33.720 +0000] (github-crawler/9000 on DESKTOP-9IG2DCJ): [36mremaining limit': 4991[39m
+    line: 1
+[34mDEBUG[39m	 [2020-10-10 05:30:34.677 +0000] (github-crawler/9000 on DESKTOP-9IG2DCJ): [36mremaining limit': 4990[39m
+    line: 2
+[34mDEBUG[39m	 [2020-10-10 05:30:36.226 +0000] (github-crawler/9000 on DESKTOP-9IG2DCJ):
+    line: 3
+    Number of user: 0
+    Remaining limit: "28"
+    Login: "vladilenm"
+[34mDEBUG[39m	 [2020-10-10 05:30:39.625 +0000] (github-crawler/9000 on DESKTOP-9IG2DCJ):
+    line: 4
+    Number of user: 1
+    Remaining limit: "27"
+    Login: "sergeche"
+[34mDEBUG[39m	 [2020-10-10 05:38:13.699 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4955[39m
+    line: 1
+[34mDEBUG[39m	 [2020-10-10 05:38:15.041 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4954[39m
+    line: 2
+[34mDEBUG[39m	 [2020-10-10 05:38:16.564 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4953[39m
+    line: 3
+[34mDEBUG[39m	 [2020-10-10 05:38:17.875 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4952[39m
+    line: 4
+[34mDEBUG[39m	 [2020-10-10 05:38:19.276 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4951[39m
+    line: 5
+[34mDEBUG[39m	 [2020-10-10 05:38:20.135 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4950[39m
+    line: 6
+[34mDEBUG[39m	 [2020-10-10 05:38:21.226 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4949[39m
+    line: 7
+[34mDEBUG[39m	 [2020-10-10 05:38:22.280 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4948[39m
+    line: 8
+[34mDEBUG[39m	 [2020-10-10 05:38:23.884 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4947[39m
+    line: 9
+[34mDEBUG[39m	 [2020-10-10 05:38:25.222 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4946[39m
+    line: 10
+[34mDEBUG[39m	 [2020-10-10 05:38:26.169 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4945[39m
+    line: 11
+[34mDEBUG[39m	 [2020-10-10 05:38:29.388 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4944[39m
+    line: 12
+[34mDEBUG[39m	 [2020-10-10 05:38:30.940 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4943[39m
+    line: 13
+[34mDEBUG[39m	 [2020-10-10 05:38:32.134 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4942[39m
+    line: 14
+[34mDEBUG[39m	 [2020-10-10 05:38:32.926 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4941[39m
+    line: 15
+[34mDEBUG[39m	 [2020-10-10 05:38:33.920 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4940[39m
+    line: 16
+[34mDEBUG[39m	 [2020-10-10 05:38:34.969 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4939[39m
+    line: 17
+[34mDEBUG[39m	 [2020-10-10 05:38:37.431 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4938[39m
+    line: 18
+[34mDEBUG[39m	 [2020-10-10 05:38:41.005 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4937[39m
+    line: 19
+[34mDEBUG[39m	 [2020-10-10 05:38:45.541 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4936[39m
+    line: 20
+[34mDEBUG[39m	 [2020-10-10 05:38:47.068 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4935[39m
+    line: 21
+[34mDEBUG[39m	 [2020-10-10 05:38:47.490 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4934[39m
+    line: 22
+[34mDEBUG[39m	 [2020-10-10 05:38:48.670 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4933[39m
+    line: 23
+[34mDEBUG[39m	 [2020-10-10 05:38:50.348 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4932[39m
+    line: 24
+[34mDEBUG[39m	 [2020-10-10 05:38:51.087 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4931[39m
+    line: 25
+[34mDEBUG[39m	 [2020-10-10 05:38:52.673 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4930[39m
+    line: 26
+[34mDEBUG[39m	 [2020-10-10 05:38:57.234 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4929[39m
+    line: 27
+[34mDEBUG[39m	 [2020-10-10 05:38:58.055 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4928[39m
+    line: 28
+[34mDEBUG[39m	 [2020-10-10 05:38:59.212 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4927[39m
+    line: 29
+[34mDEBUG[39m	 [2020-10-10 05:39:00.068 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mremaining limit': 4926[39m
+    line: 30
+[34mDEBUG[39m	 [2020-10-10 05:39:01.592 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 31
+    Number of user: 0
+    Remaining limit: "28"
+    Login: "vladilenm"
+[34mDEBUG[39m	 [2020-10-10 05:39:04.102 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 32
+    Number of user: 1
+    Remaining limit: "27"
+    Login: "sergeche"
+[34mDEBUG[39m	 [2020-10-10 05:39:07.012 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 33
+    Number of user: 2
+    Remaining limit: "26"
+    Login: "abreslav"
+[34mDEBUG[39m	 [2020-10-10 05:39:09.741 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 34
+    Number of user: 3
+    Remaining limit: "25"
+    Login: "buger"
+[34mDEBUG[39m	 [2020-10-10 05:39:12.772 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 35
+    Number of user: 4
+    Remaining limit: "29"
+    Login: "meritt"
+[34mDEBUG[39m	 [2020-10-10 05:39:16.163 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 36
+    Number of user: 5
+    Remaining limit: "28"
+    Login: "MikeMirzayanov"
+[34mDEBUG[39m	 [2020-10-10 05:39:19.478 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 37
+    Number of user: 6
+    Remaining limit: "27"
+    Login: "Kagami"
+[34mDEBUG[39m	 [2020-10-10 05:39:22.925 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 38
+    Number of user: 7
+    Remaining limit: "26"
+    Login: "dy"
+[34mDEBUG[39m	 [2020-10-10 05:39:26.616 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 39
+    Number of user: 8
+    Remaining limit: "25"
+    Login: "niquola"
+[34mDEBUG[39m	 [2020-10-10 05:39:27.908 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 40
+    Number of user: 9
+    Remaining limit: "24"
+    Login: "vodkabears"
+[34mDEBUG[39m	 [2020-10-10 05:39:31.526 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 41
+    Number of user: 10
+    Remaining limit: "23"
+    Login: "artpolikarpov"
+[34mDEBUG[39m	 [2020-10-10 05:39:35.459 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 42
+    Number of user: 11
+    Remaining limit: "22"
+    Login: "sergeysova"
+[34mDEBUG[39m	 [2020-10-10 05:39:36.680 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 43
+    Number of user: 12
+    Remaining limit: "21"
+    Login: "bravit"
+[31mERROR[39m	 [2020-10-10 05:39:39.428 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mTotal errors: 1[39m
+    Error: Request failed with status code 403
+        at createError (D:\Документы\Учеба\NIR\node_modules\axios\lib\core\createError.js:16:15)
+        at settle (D:\Документы\Учеба\NIR\node_modules\axios\lib\core\settle.js:17:12)
+        at IncomingMessage.handleStreamEnd (D:\Документы\Учеба\NIR\node_modules\axios\lib\adapters\http.js:244:11)
+        at IncomingMessage.emit (events.js:326:22)
+        at endReadableNT (_stream_readable.js:1244:12)
+        at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[34mDEBUG[39m	 [2020-10-10 05:39:43.755 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 45
+    Number of user: 14
+    Remaining limit: "20"
+    Login: "the-teacher"
+[34mDEBUG[39m	 [2020-10-10 05:39:46.304 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 46
+    Number of user: 15
+    Remaining limit: "19"
+    Login: "tsergeytovarov"
+[31mERROR[39m	 [2020-10-10 05:39:48.408 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mTotal errors: 2[39m
+    Error: Request failed with status code 403
+        at createError (D:\Документы\Учеба\NIR\node_modules\axios\lib\core\createError.js:16:15)
+        at settle (D:\Документы\Учеба\NIR\node_modules\axios\lib\core\settle.js:17:12)
+        at IncomingMessage.handleStreamEnd (D:\Документы\Учеба\NIR\node_modules\axios\lib\adapters\http.js:244:11)
+        at IncomingMessage.emit (events.js:326:22)
+        at endReadableNT (_stream_readable.js:1244:12)
+        at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[34mDEBUG[39m	 [2020-10-10 05:39:51.783 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 48
+    Number of user: 17
+    Remaining limit: "18"
+    Login: "ozkriff"
+[31mERROR[39m	 [2020-10-10 05:39:55.189 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mTotal errors: 3[39m
+    Error: Request failed with status code 403
+        at createError (D:\Документы\Учеба\NIR\node_modules\axios\lib\core\createError.js:16:15)
+        at settle (D:\Документы\Учеба\NIR\node_modules\axios\lib\core\settle.js:17:12)
+        at IncomingMessage.handleStreamEnd (D:\Документы\Учеба\NIR\node_modules\axios\lib\adapters\http.js:244:11)
+        at IncomingMessage.emit (events.js:326:22)
+        at endReadableNT (_stream_readable.js:1244:12)
+        at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[34mDEBUG[39m	 [2020-10-10 05:39:58.100 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 50
+    Number of user: 19
+    Remaining limit: "17"
+    Login: "darkk"
+[31mERROR[39m	 [2020-10-10 05:40:00.442 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ): [36mTotal errors: 4[39m
+    Error: Request failed with status code 403
+        at createError (D:\Документы\Учеба\NIR\node_modules\axios\lib\core\createError.js:16:15)
+        at settle (D:\Документы\Учеба\NIR\node_modules\axios\lib\core\settle.js:17:12)
+        at IncomingMessage.handleStreamEnd (D:\Документы\Учеба\NIR\node_modules\axios\lib\adapters\http.js:244:11)
+        at IncomingMessage.emit (events.js:326:22)
+        at endReadableNT (_stream_readable.js:1244:12)
+        at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[34mDEBUG[39m	 [2020-10-10 05:40:04.198 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 52
+    Number of user: 21
+    Remaining limit: "16"
+    Login: "Miocene"
+[34mDEBUG[39m	 [2020-10-10 05:40:07.448 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 53
+    Number of user: 22
+    Remaining limit: "15"
+    Login: "o0"
+[34mDEBUG[39m	 [2020-10-10 05:40:11.593 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 54
+    Number of user: 23
+    Remaining limit: "14"
+    Login: "alexfedoseev"
+[34mDEBUG[39m	 [2020-10-10 05:40:13.106 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 55
+    Number of user: 24
+    Remaining limit: "13"
+    Login: "XProger"
+[34mDEBUG[39m	 [2020-10-10 05:40:16.198 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 56
+    Number of user: 25
+    Remaining limit: "29"
+    Login: "brainopia"
+[34mDEBUG[39m	 [2020-10-10 05:40:19.107 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 57
+    Number of user: 26
+    Remaining limit: "28"
+    Login: "grishka"
+[34mDEBUG[39m	 [2020-10-10 05:40:21.771 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 58
+    Number of user: 27
+    Remaining limit: "27"
+    Login: "sidristij"
+[34mDEBUG[39m	 [2020-10-10 05:40:25.150 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 59
+    Number of user: 28
+    Remaining limit: "26"
+    Login: "kefirski"
+[34mDEBUG[39m	 [2020-10-10 05:40:28.793 +0000] (github-crawler/10904 on DESKTOP-9IG2DCJ):
+    line: 60
+    Number of user: 29
+    Remaining limit: "25"
+    Login: "sergey-lapin"
