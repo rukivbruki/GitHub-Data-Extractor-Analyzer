@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = {
-    ExitCode: {
-        SUCCESS: 0,
-        ERROR: 1,
-        WORKING: 2,
-    },
+  ExitCode: {
+    SUCCESS: 0,
+    ERROR: 1,
+    WORKING: 2,
+  },
 };

@@ -3,7 +3,7 @@
 const crawler = require(`./crawler`);
 
 module.exports = {
-    Cli: {
-        [crawler.name]: crawler,
-    },
+  Cli: {
+    [crawler.name]: crawler,
+  },
 };
