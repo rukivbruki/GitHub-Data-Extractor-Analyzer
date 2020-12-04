@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js | pino-pretty"
+    "start": "node index.js | pino-pretty",
+    "search": "node service/service.js --search"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
     "express": "4.17.1",
     "ml-regression": "^5.0.0",
     "moment": "^2.29.1",
+    "mongoose": "^5.10.15",
     "pino": "6.7.0",
     "pino-colada": "^2.1.0",
     "request": "2.88.0",

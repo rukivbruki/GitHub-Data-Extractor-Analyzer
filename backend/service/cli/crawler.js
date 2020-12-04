@@ -2,13 +2,17 @@
 
 const chalkPipe = require('chalk-pipe');
 const Table = require('cli-table');
-
-const { ExitCode } = require('../../const');
-const { dateCreator, isEmpty } = require('../../helpers');
+const {
+  dateCreator,
+  isEmpty,
+  stopService,
+  doHardWork,
+} = require('../../helpers');
 const api = require(`../../api`).getAPI();
-const { singleBar } = require(`../../cliProgress`);
+const { singleBar } = require(`../../service/lib/cliProgress`);
 const { getMenu } = require('./menu');
-const { getLogger } = require(`../../logger`);
+const { getLogger } = require(`../../service/lib/logger`);
+// const { saveSearch, getAllSearches } = require('../database');
 
 const logs = {
   progress: 0,
@@ -46,7 +50,7 @@ async function* fetchCommits(place) {
 const executor = async (answers, logger) => {
   answers = JSON.parse(answers);
   let count = 0;
-  console.log(answers.count);
+  console.log(Number(answers.count));
 
   for await (const item of fetchCommits(answers.city)) {
     const res = await api.getRepos(item);
@@ -55,7 +59,7 @@ const executor = async (answers, logger) => {
 
     logger.debug(`remaining limit': ${res.headers['x-ratelimit-remaining']}`);
 
-    if (++count === answers.count) {
+    if (++count === Number(answers.count)) {
       break;
     }
   }
@@ -74,6 +78,8 @@ const executor = async (answers, logger) => {
               { 'Amount names': `${logs.names.length}` },
             );
             console.log(table.toString());
+            // saveSearch(answers, logs);
+            process.exit(0);
           })()
         : null;
     await api
@@ -111,10 +117,19 @@ const executor = async (answers, logger) => {
 };
 
 module.exports = {
-  name: `--search`,
-  async run(arg) {
-    const logger = getLogger(arg);
-    getMenu(logger)(executor);
-    return ExitCode.WORKING;
+  name: `--crawler`,
+  async run(args, platform, mock) {
+    if (platform === 'console') {
+      setTimeout(() => stopService(doHardWork), 20000);
+      const consoleLogger = getLogger({
+        name: 'logger-GitHub',
+        level: args[0],
+      });
+      getMenu(consoleLogger)(executor);
+    }
+    if (platform === 'web') {
+      const webLogger = getLogger({ name: 'logger-api', level: args[0] });
+      await executor(mock, webLogger);
+    }
   },
 };

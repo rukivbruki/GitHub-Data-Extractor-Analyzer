@@ -2,12 +2,9 @@
 
 const axios = require(`axios`);
 require('dotenv').config();
-
-const TIMEOUT = 15000;
+const { BASE_URL, TIMEOUT } = require('./const');
 
 // const port = process.env.API_PORT || 3000;
-const defaultURL = `https://api.github.com/`;
-
 class API {
   constructor(baseURL, timeout) {
     this.instance = axios.create({
@@ -33,7 +30,7 @@ class API {
   getRepos = (item) => this._load(item.repos_url);
 }
 
-const defaultAPI = new API(defaultURL, TIMEOUT);
+const defaultAPI = new API(BASE_URL, TIMEOUT);
 
 module.exports = {
   API,

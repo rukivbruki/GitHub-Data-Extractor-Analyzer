@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+    app:
+        build:
+            context: ""
+            dockerfile: Dockerfile
+        expose:
+            - 3000
+        depends_on:
+            - mongodb
+        deploy:
+            replicas: 1 ## change if we need more
+
+    mongodb:
+        container_name: mongodb
+        image: mongo:latest
+        hostname: mongodb
+        ports:
+            - "27017:27017"
+        volumes:
+           - /usr/local/var/mongodb:/data
