@@ -1,8 +1,8 @@
 'use strict';
 
 const { Router } = require(`express`);
-const { Mock } = require('../../../const');
-const { Platform } = require('../../../const');
+const { crawlerData } = require(`../../../data`);
+const { Platform } = require(`../../../const`);
 
 const startService = (data) => {
   if (data) {
@@ -21,6 +21,11 @@ const createCrawlerRouter = () => {
 
   router.post(`/`, (req, res, next) => {
     startService(req.body);
+  });
+
+  router.get(`/data`, (req, res, next) => {
+    res.send(crawlerData);
+    // startService(req.body);
   });
 
   return router;

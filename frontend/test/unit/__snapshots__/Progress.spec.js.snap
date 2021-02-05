@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Компонент Progress отображает корректную разметку 1`] = `
+<div id="progress" class="progress">
+  <p class="progress-msg">Загружаю данные</p>
+  <a-progress percent="0"></a-progress>
+  <!---->
+</div>
+`;

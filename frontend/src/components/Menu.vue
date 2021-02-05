@@ -63,6 +63,7 @@ export default {
         console.log(error);
       });
       console.log(data)
+      this.$root.$emit('increase');
     }
   }
 }

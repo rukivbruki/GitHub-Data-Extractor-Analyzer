@@ -1,67 +1,77 @@
 <template>
-  <div id="progress">
-    <p>{{ msg }}</p>
-    <a-progress :percent="percent" />
+  <div id="progress" class='progress'>
+    <p v-bind:class="{ 'progress-msg': isActive }">{{ msg }}</p>
+    <a-progress :percent="Math.round(percent)" />
     <table v-if="!loading">
       <colgroup>
         <col span="2" style="background: Khaki" />
         <col style="background-color: LightCyan" />
       </colgroup>
       <tr>
-        <th>№ п/п</th>
-        <th>Наименование</th>
-        <th>Цена, руб.</th>
+        <th>№</th>
+        <th>Искомые данные</th>
+        <th>Значение</th>
       </tr>
       <tr>
         <td>1</td>
-        <td>Карандаш цветной</td>
-        <td>20,00</td>
+        <td>Найдено репозиториев</td>
+        <td>{{ totalRepos }}</td>
       </tr>
       <tr>
         <td>2</td>
-        <td>Линейка 20 см</td>
-        <td>30,00</td>
+        <td>Кол-во изученных репозиториев</td>
+        <td>{{ amountNames }}</td>
       </tr>
     </table>
   </div>
 </template>
 <script>
+import api from "../../api";
+
 export default {
   name: "Progress",
   data() {
     return {
+      isActive: true,
       percent: 0,
+      totalRepos: 0,
+      amountNames: 0
     };
   },
   computed: {
-    bolean: function () {
+    loading: function() {
       return this.percent !== 100;
     },
-    loading: function () {
-      return this.bolean;
-    },
-    msg: function () {
-      return this.bolean ? "Загружаю данные" : "Данные загружены";
-    },
-  },
-  created() {
-    if (this.loading) {
-      this.incrementProgress();
+    msg: function() {
+      return this.loading ? "Загружаю данные" : "Данные загружены";
     }
   },
   beforeUpdate() {
-    if (this.loading) {
-      this.incrementProgress();
-    }
+    this.isActive = !this.isActive;
+  },
+  mounted() {
+    this.$root.$on("increase", () => {
+      this.pingData();
+    });
   },
   methods: {
-    incrementProgress() {
-      setTimeout(() => {
-        let percent = this.percent + 10;
-        this.percent = percent;
-      }, 300);
-    },
-  },
+    pingData: function() {
+      let timerId = setInterval(() => api.get("/api/crawler/data")
+      .then((res) => {
+        const { names, progress, totalRepos } = res.data;
+        this.percent = progress / names.length * 100;
+        return { names, totalRepos };
+      })
+      .then(({ names, totalRepos }) => {
+        this.amountNames = names.length;
+        this.totalRepos = totalRepos;
+      })
+      .then(this.percent === 100 ? clearInterval(timerId) : null)
+      .catch(function(error) {
+        console.log(error);
+      }), 500);
+    }
+  }
 };
 </script>
 <style>
@@ -71,14 +81,21 @@ export default {
   text-align: center;
   margin: 20px auto auto;
 }
+
 p {
   margin-bottom: 5px;
   color: grey;
 }
+
+.progress-msg {
+  color: chocolate;
+}
+
 table {
   margin: 20px auto auto;
   width: 400px;
 }
+
 th,
 td {
   border: 1px solid grey;

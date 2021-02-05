@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Компонент Menu отображает корректную разметку 1`] = `
+<div id="menu">
+  <formulateform>
+    <formulateinput label="В каком городе будем искать?" name="city" help="Введите латиницей город для поиска" validation="^required|matches:/[a-z]/" validation-messages="[object Object]"></formulateinput>
+    <formulateinput type="select" label="По какой библиотеке осуществляем поиск?" name="lib" options="[object Object],[object Object],[object Object]"></formulateinput>
+    <formulateinput type="number" name="count" label="Сколько пользователей обойдем?" help="Чтобы найти всех пользователей поставьте 0" placeholder="Sample number placeholder" validation="required|number" error-behavior="live" validation-messages="[object Object]"></formulateinput>
+    <formulateinput type="submit" label="Начать поиск"></formulateinput>
+  </formulateform>
+</div>
+`;

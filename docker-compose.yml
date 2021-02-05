@@ -1,12 +1,14 @@
 version: "3.8"
 
 services:
-    app:
+    backend:
         build:
-            context: ""
+            context: "backend"
             dockerfile: Dockerfile
         expose:
-            - 3000
+            - 5000
+        ports:
+            - "5000:5000"
         depends_on:
             - mongodb
         deploy:
@@ -20,3 +22,14 @@ services:
             - "27017:27017"
         volumes:
            - /usr/local/var/mongodb:/data
+
+    frontend:
+        build:
+            context: "frontend"
+            dockerfile: Dockerfile
+        ports:
+            - "8080:8080"
+        expose:
+            - 8080
+        depends_on:
+            - backend

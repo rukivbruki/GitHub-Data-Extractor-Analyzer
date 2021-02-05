@@ -5,22 +5,15 @@ const Table = require('cli-table');
 const {
   dateCreator,
   isEmpty,
-  stopService,
-  doHardWork,
+  // stopService,
+  // doHardWork,
 } = require('../../helpers');
+const { crawlerData } = require('../../data');
 const api = require(`../../api`).getAPI();
 const { singleBar } = require(`../../service/lib/cliProgress`);
 const { getMenu } = require('./menu');
 const { getLogger } = require(`../../service/lib/logger`);
 // const { saveSearch, getAllSearches } = require('../database');
-
-const logs = {
-  progress: 0,
-  totalRepos: null,
-  names: [],
-  errors: [],
-};
-
 const warning = chalkPipe('orange.bold');
 const info = chalkPipe('yellow.bold');
 
@@ -55,7 +48,7 @@ const executor = async (answers, logger) => {
   for await (const item of fetchCommits(answers.city)) {
     const res = await api.getRepos(item);
 
-    isEmpty(res.data) && logs.names.push(item.login);
+    isEmpty(res.data) && crawlerData.names.push(item.login);
 
     logger.debug(`remaining limit': ${res.headers['x-ratelimit-remaining']}`);
 
@@ -64,54 +57,58 @@ const executor = async (answers, logger) => {
     }
   }
 
-  console.log('\n' + `Users: `, logs.names);
-  console.log(info('\n' + 'Total: ', logs.names.length + '\n'));
+  console.log('\n' + `Users: `, crawlerData.names);
+  console.log(info('\n' + 'Total: ', crawlerData.names.length + '\n'));
 
   const getInfo = async (item) => {
     const printResult = () =>
-      logs.names.length === logs.progress
+      crawlerData.names.length === crawlerData.progress
         ? (() => {
             const table = new Table();
             singleBar.stop();
             table.push(
-              { 'Total repos': `${logs.totalRepos}` },
-              { 'Amount names': `${logs.names.length}` },
+              { 'Total repos': `${crawlerData.totalRepos}` },
+              { 'Amount names': `${crawlerData.names.length}` },
             );
             console.log(table.toString());
-            // saveSearch(answers, logs);
-            process.exit(0);
+            // saveSearch(answers, crawlerData);
+            setTimeout(() => process.exit(0), 1000);
           })()
         : null;
     await api
       .searchCode(item, answers)
       .then((res) => {
         logger.debug({
-          'Number of user': logs.names.indexOf(item),
+          'Number of user': crawlerData.names.indexOf(item),
           'Remaining limit': res.headers['x-ratelimit-remaining'],
           Login: item,
         });
-        logs.totalRepos += res.data.total_count;
-        logs.progress++;
-        console.log(info(singleBar.start(logs.names.length, logs.progress)));
+        crawlerData.totalRepos += res.data.total_count;
+        crawlerData.progress++;
+        console.log(
+          info(singleBar.start(crawlerData.names.length, crawlerData.progress)),
+        );
         printResult();
       })
       .catch((err) => {
-        logs.progress++;
+        crawlerData.progress++;
         printResult();
-        logs.errors.push(err);
-        logger.error(err, `Number of user: ${logs.names.indexOf(item)}`);
+        crawlerData.errors.push(err);
+        logger.error(err, `Number of user: ${crawlerData.names.indexOf(item)}`);
       });
   };
 
-  for (const item of logs.names) {
+  for (const item of crawlerData.names) {
     setTimeout(
       () =>
         getInfo(item).then(() => {
           console.log(
-            warning(`Find projects with ${answers.lib}: ${logs.totalRepos}`),
+            warning(
+              `Find projects with ${answers.lib}: ${crawlerData.totalRepos}`,
+            ),
           );
         }),
-      3000 * logs.names.indexOf(item),
+      3000 * crawlerData.names.indexOf(item),
     );
   }
 };
@@ -120,7 +117,7 @@ module.exports = {
   name: `--crawler`,
   async run(args, platform, mock) {
     if (platform === 'console') {
-      setTimeout(() => stopService(doHardWork), 20000);
+      // setTimeout(() => stopService(doHardWork), 20000);
       const consoleLogger = getLogger({
         name: 'logger-GitHub',
         level: args[0],
