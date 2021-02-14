@@ -33,11 +33,12 @@ jobs:
 
   deploy-frontend:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
     steps:
       - name: Create SSH key
         run: |
-          apk update && apk add openssh
-          cd frontend/
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
           chmod 600 ~/.ssh/id_dsa
