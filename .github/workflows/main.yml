@@ -39,7 +39,7 @@ jobs:
     steps:
       - name: Create SSH key
         run: |
-          mkdir -p ~/.ssh
+          echo "Hello, shit"
 
         shell: bash
         env:
