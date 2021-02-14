@@ -37,7 +37,7 @@ jobs:
     steps:
       - name: Create SSH key
         run: |
-          ls
+          echo "Привет, Дерьмо!"
           cd ./frontend
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
