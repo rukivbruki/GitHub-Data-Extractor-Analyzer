@@ -17,5 +17,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      env:
+        working-directory: ./frontend
+      working-directory: ${{ env.working-directory }}
       - run: npm install
       - run: npm run test
