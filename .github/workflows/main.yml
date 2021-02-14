@@ -17,6 +17,16 @@ jobs:
           npm run build
           npm t
 
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+           SSH_PRIVATE_KEY: ${{ secrets.SERVER_PRIVATE_KEY }}
+           ARGS: "-rltgoDzvO --delete"
+           SOURCE: "dist/"
+           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+           REMOTE_USER: ${{ secrets.REMOTE_USER }}
+           TARGET: ${{ secrets.REMOTE_TARGET }}
+
 
   buildBackend:
     runs-on: ubuntu-latest
@@ -31,20 +41,18 @@ jobs:
         run: |
           npm t
 
-  deploy-frontend:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Create SSH key
-        run: |
-          echo "Привет, Дерьмо!"
-          cd ./frontend
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
-          chmod 600 ~/.ssh/id_dsa
-          echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
-          scp -r dist/ ci_cd@91.239.26.122:/home/ci_cd/github-api-search-tool/dist
-
-        shell: bash
-        env:
-          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
+#  deploy-frontend:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Create SSH key
+#        run: |
+#          cd ./frontend
+#          mkdir -p ~/.ssh
+#          echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
+#          chmod 600 ~/.ssh/id_dsa
+#          echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+#          scp -r dist/ ci_cd@91.239.26.122:/home/ci_cd/github-api-search-tool/dist
+#
+#        shell: bash
+#        env:
+#          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
