@@ -33,10 +33,17 @@ jobs:
 
   deploy-frontend:
     runs-on: ubuntu-latest
+
     steps:
       - name: Create SSH key
         run: |
-          echo "Hello, shit"
+          cd frontend
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
+          chmod 600 ~/.ssh/id_dsa
+          echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+          scp -r dist/ ci_cd@91.239.26.122:/home/ci_cd/github-api-search-tool/dist
+
         shell: bash
         env:
           SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
