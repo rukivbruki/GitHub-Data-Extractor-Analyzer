@@ -39,9 +39,9 @@ jobs:
     steps:
       - name: Create SSH key
         run: |
+          ls -la
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
-          ls -la
           chmod 600 ~/.ssh/id_dsa
           echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
           scp -r dist/ ci_cd@91.239.26.122:/home/ci_cd/github-api-search-tool/dist
