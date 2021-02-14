@@ -36,11 +36,14 @@ jobs:
     steps:
       - name: Create SSH key
         run: |
-          mkdir -p ~/.ssh/
-          echo "$SSH_PRIVATE_KEY" > ../private.key
-          sudo chmod 600 ../private.key
+          apk update && apk add openssh
+          cd frontend/
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
+          chmod 600 ~/.ssh/id_dsa
           echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
-          scp dist/ root@91.239.26.122:/home/github-api-search-tool
+          scp -r dist/ ci_cd@91.239.26.122:/home/ci_cd/github-api-search-tool/dist
+
         shell: bash
         env:
           SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
