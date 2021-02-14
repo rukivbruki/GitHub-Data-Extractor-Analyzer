@@ -46,7 +46,7 @@ jobs:
     steps:
       - name: Create SSH key
         run: |
-          cd ./frontend/dist
+          cd frontend
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
           chmod 600 ~/.ssh/id_dsa
