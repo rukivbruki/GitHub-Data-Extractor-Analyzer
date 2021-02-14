@@ -16,12 +16,12 @@ jobs:
         run: |
           npm run build
           npm t
-  
-  
+
+
   buildBackend:
     runs-on: ubuntu-latest
     defaults:
-      run:
+     run:
         working-directory: ./backend
     steps:
       - uses: actions/checkout@v1
@@ -29,5 +29,22 @@ jobs:
         run: npm install
       - name: Run Tests
         run: |
-          npm run build
           npm t
+
+  deploy-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create SSH key
+        run: |
+          apk add --no-cache rsync openssh
+          mkdir -p ~/.ssh/
+          echo "$SSH_PRIVATE_KEY" > ../private.key
+          sudo chmod 600 ../private.key
+          echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          rsync -rav --delete dist/ root@91.239.26.122:/home/github-api-search-tool
+        shell: bash
+        env:
+          SSH_PRIVATE_KEY: ${{secrets.SSH_private_key}}
+          SSH_KNOWN_HOSTS: ${{secrets.SSH_KNOWN_HOSTS}}
+          SSH_KEY_PATH: ${{ github.workspace }}/../private.key
+
