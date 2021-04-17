@@ -1,7 +1,7 @@
 'use strict';
 
 const { Router } = require(`express`);
-const { crawlerData } = require(`../../../data`);
+const { crawlerData } = require(`../../cli/crawler`);
 const { Platform } = require(`../../../const`);
 
 const startService = (data) => {
@@ -24,7 +24,8 @@ const createCrawlerRouter = () => {
   });
 
   router.get(`/data`, (req, res, next) => {
-    res.send(crawlerData);
+    console.log('СМОТРИМ заголовки', JSON.stringify(crawlerData));
+    res.send(crawlerData[req.query['id']]);
     // startService(req.body);
   });
 
