@@ -12,6 +12,7 @@ module.exports.doHardWork = (resolve) => {
 };
 
 module.exports.dateCreator = {
+  test: 23,
   date1: moment('2018-01-01'),
   date2: moment('2018-02-01'),
   getDate() {
@@ -52,4 +53,3 @@ module.exports.stopService = async (doHardWork) => {
     console.log('error happened', err);
   }
 };
-

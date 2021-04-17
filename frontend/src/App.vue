@@ -13,8 +13,8 @@ export default {
   name: "App",
   components: {
     Progress,
-    Menu
-  }
+    Menu,
+  },
 };
 </script>
 
@@ -24,4 +24,3 @@ export default {
   margin-top: 60px;
 }
 </style>
-
