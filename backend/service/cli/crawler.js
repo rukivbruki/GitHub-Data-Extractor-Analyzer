@@ -22,6 +22,7 @@ async function* fetchCommits(place) {
   while (dateCreator.checkDate()) {
     const date1 = dateCreator.date1.format('YYYY-MM');
     const date2 = dateCreator.date2.format('YYYY-MM');
+    console.log(date1, date2, dateCreator.checkDate(), nextPage);
     const queryString1 = `location:${place} created:${date1}..${date2}`;
     const query = {
       query: `
