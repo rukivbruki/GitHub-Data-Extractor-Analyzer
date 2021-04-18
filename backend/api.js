@@ -9,7 +9,7 @@ const { BASE_URL, TIMEOUT } = require('./const');
 const headers = {
   'content-type': 'application/json',
   'User-Agent': 'Our script',
-  Authorization: 'token 9b6be655889bd8cb405a3cb1f0706a51ce1da49d',
+  Authorization: process.env.TOKEN,
   'Access-Control-Allow-Headers': 'x-access-token',
 };
 
