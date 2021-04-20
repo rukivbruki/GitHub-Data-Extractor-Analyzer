@@ -24,7 +24,6 @@ const createCrawlerRouter = () => {
   });
 
   router.get(`/data`, (req, res, next) => {
-    console.log('СМОТРИМ заголовки', JSON.stringify(crawlerData));
     res.send(crawlerData[req.query['id']]);
     // startService(req.body);
   });

@@ -6,7 +6,7 @@ const { getLogger } = require(`../../service/lib/logger`);
 
 const logger = getLogger({ name: `api` });
 
-const DEFAULT_PORT = 5000;
+const DEFAULT_PORT = 5001;
 const app = express();
 
 app.use(express.json());

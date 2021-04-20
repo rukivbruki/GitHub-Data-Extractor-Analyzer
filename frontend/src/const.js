@@ -9,6 +9,6 @@ const HttpCode = {
   UNAUTHORIZED: 401,
   BAD_REQUEST: 400,
 };
-const BASE_URL = `http://localhost:5000/`;
+const BASE_URL = `http://localhost:5001/`;
 const TIMEOUT = 15000;
 export { HttpCode, BASE_URL, TIMEOUT };

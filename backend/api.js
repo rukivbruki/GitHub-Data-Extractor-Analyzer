@@ -3,6 +3,7 @@
 const axios = require(`axios`);
 require('dotenv').config();
 const { BASE_URL, TIMEOUT } = require('./const');
+console.log(process.env);
 
 // const port = process.env.API_PORT || 3000;
 class API {
@@ -12,7 +13,7 @@ class API {
       timeout,
       headers: {
         'User-Agent': 'Our script',
-        Authorization: process.env.TOKEN,
+        Authorization: 'token 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',
         'Access-Control-Allow-Headers': 'x-access-token',
       },
     });
