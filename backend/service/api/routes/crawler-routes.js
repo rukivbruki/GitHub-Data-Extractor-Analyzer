@@ -1,7 +1,7 @@
 'use strict';
 
 const { Router } = require(`express`);
-const { crawlerData } = require(`../../../data`);
+const { crawlerData } = require(`../../cli/crawler`);
 const { Platform } = require(`../../../const`);
 
 const startService = (data) => {
@@ -18,16 +18,16 @@ const startService = (data) => {
 
 const createCrawlerRouter = () => {
   const router = new Router();
-
+  
   router.post(`/`, (req, res, next) => {
     startService(req.body);
   });
-
+  
   router.get(`/data`, (req, res, next) => {
-    res.send(crawlerData);
+    res.send(crawlerData[req.query['id']]);
     // startService(req.body);
   });
-
+  
   return router;
 };
 

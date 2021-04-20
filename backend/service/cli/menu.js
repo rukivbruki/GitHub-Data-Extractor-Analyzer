@@ -27,7 +27,6 @@ const questions = [
       10,
       30,
       50,
-      110,
       500,
       2095,
       'Искать по всем репозиториям',
@@ -38,12 +37,7 @@ const questions = [
 ];
 
 module.exports = {
-  getMenu(logger) {
-    return (executor) => {
-      inquirer.prompt(questions).then((answers) => {
-        console.log(answers);
-        return executor(JSON.stringify(answers, null, '  '), logger);
-      });
-    };
+  getMenu() {
+    return inquirer.prompt(questions);
   },
 };
