@@ -18,16 +18,17 @@ const startService = (data) => {
 
 const createCrawlerRouter = () => {
   const router = new Router();
-  
+
   router.post(`/`, (req, res, next) => {
     startService(req.body);
   });
-  
+
   router.get(`/data`, (req, res, next) => {
+    console.log(crawlerData[req.query['id']]);
     res.send(crawlerData[req.query['id']]);
     // startService(req.body);
   });
-  
+
   return router;
 };
 

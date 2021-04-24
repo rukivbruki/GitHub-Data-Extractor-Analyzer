@@ -41,7 +41,8 @@
 </template>
 
 <script>
-import api from "../../api";
+import apiServe from "../api/ApiServe";
+
 export default {
   name: "Menu",
   data() {
@@ -51,15 +52,7 @@ export default {
   },
   methods: {
     submitHandler(data) {
-      api
-        .post("/api/crawler", data)
-        .then(function (response) {
-          console.log(response);
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-      console.log(data);
+      apiServe.startService("crawler", data);
       this.$root.$emit("increase");
     },
   },

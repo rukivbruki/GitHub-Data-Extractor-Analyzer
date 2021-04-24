@@ -20,13 +20,18 @@
       <tr>
         <td>2</td>
         <td>Кол-во изученных репозиториев</td>
-        <td>{{ amountNames }}</td>
+        <td>{{ numberNames }}</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Затраченное время</td>
+        <td>{{ totalTime }}</td>
       </tr>
     </table>
   </div>
 </template>
 <script>
-import api from "../../api";
+import apiServe from "../api/ApiServe";
 
 export default {
   name: "Progress",
@@ -35,7 +40,8 @@ export default {
       isActive: true,
       percent: 0,
       totalRepos: 0,
-      amountNames: 0,
+      numberNames: 0,
+      totalTime: 0,
     };
   },
   computed: {
@@ -58,16 +64,18 @@ export default {
     pingData: function () {
       let timerId = setInterval(
         () =>
-          api
-            .get("/api/crawler/data")
+          apiServe
+            .getData("crawler")
             .then((res) => {
-              const { names, progress, totalRepos } = res.data;
+              console.log(res);
+              const { names, progress, totalRepos, totalTime } = res.data;
               this.percent = (progress / names.length) * 100;
-              return { names, totalRepos };
+              return { names, totalRepos, totalTime };
             })
-            .then(({ names, totalRepos }) => {
-              this.amountNames = names.length;
+            .then(({ names, totalRepos, totalTime }) => {
+              this.numberNames = names.length;
               this.totalRepos = totalRepos;
+              this.totalTime = totalTime;
             })
             .then(this.percent === 100 ? clearInterval(timerId) : null)
             .catch(function (error) {
