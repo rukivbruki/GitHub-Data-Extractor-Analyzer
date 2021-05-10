@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const { Router } = require(`express`);
 const { crawlerData } = require(`../../cli/crawler`);
@@ -7,11 +7,11 @@ const { Platform } = require(`../../../const`);
 const startService = (data) => {
   if (data) {
     console.log(data);
-    const { Cli } = require('../../cli');
-    Cli['--crawler'].run(
-      ['debug'],
+    const { Cli } = require("../../cli");
+    Cli["--crawler"].run(
+      ["debug"],
       Platform.WEB,
-      JSON.stringify(data, null, '  '),
+      JSON.stringify(data, null, "  ")
     );
   }
 };
@@ -24,8 +24,8 @@ const createCrawlerRouter = () => {
   });
 
   router.get(`/data`, (req, res, next) => {
-    console.log(crawlerData[req.query['id']]);
-    res.send(crawlerData[req.query['id']]);
+    console.log(crawlerData[req.query["id"]]);
+    res.send(crawlerData[req.query["id"]]);
     // startService(req.body);
   });
 

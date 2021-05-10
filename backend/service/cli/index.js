@@ -1,5 +1,3 @@
-'use strict';
-
 const crawler = require(`./crawler`);
 const server = require(`./server`);
 

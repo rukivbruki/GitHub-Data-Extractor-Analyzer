@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
-const cliProgress = require('cli-progress');
+const cliProgress = require("cli-progress");
 
 module.exports.singleBar = new cliProgress.SingleBar(
   {
     barsize: 30,
-    barIncompleteChar: '.',
-    format: 'progress [{bar}] | {value}/{total}',
+    barIncompleteChar: ".",
+    format: "progress [{bar}] | {value}/{total}",
   },
-  cliProgress.Presets.legacy,
+  cliProgress.Presets.legacy
 );

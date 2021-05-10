@@ -1,0 +1,37 @@
+{
+  "data": {
+    "rateLimit": {
+      "limit": 5000,
+      "cost": 1,
+      "remaining": 4990,
+      "resetAt": "2021-05-10T07:29:28Z"
+    },
+    "result": {
+      "userCount": 320,
+      "pageInfo": {
+        "endCursor": "Y3Vyc29yOjI=",
+        "hasNextPage": true
+      },
+      "edges": [
+        {
+          "node": {
+            "location": "Saint-Petersburg, Russia",
+            "login": "MortyMerr",
+            "repositories": {
+              "edges": [
+                {
+                  "node": {
+                    "url": "https://github.com/evgeth/The-hat",
+                    "primaryLanguage": {
+                      "name": "Swift"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

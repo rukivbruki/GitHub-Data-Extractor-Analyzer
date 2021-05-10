@@ -1,37 +1,37 @@
-'use strict';
+"use strict";
 
-const inquirer = require('inquirer');
+const inquirer = require("inquirer");
 const questions = [
   {
-    type: 'input',
-    name: 'city',
-    message: 'В каком городе будем искать?',
+    type: "input",
+    name: "city",
+    message: "В каком городе будем искать?",
     default: function () {
-      return 'saint-petersburg';
+      return "saint-petersburg";
     },
   },
   {
-    type: 'input',
-    name: 'lib',
-    message: 'Какую библиотеку?',
+    type: "input",
+    name: "lib",
+    message: "Какую библиотеку?",
     default: function () {
-      return 'react';
+      return "react";
     },
   },
   {
-    type: 'list',
-    name: 'count',
-    message: 'Сколько пользователей обойдем?',
+    type: "list",
+    name: "count",
+    message: "Сколько пользователей обойдем?",
     choices: [
       2,
       10,
       30,
       50,
       500,
-      2095,
-      'Искать по всем репозиториям',
+      1000,
+      "Искать по всем репозиториям",
       new inquirer.Separator(),
-      'Узнать больше о приложении',
+      "Узнать больше о приложении",
     ],
   },
 ];

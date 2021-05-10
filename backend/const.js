@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 module.exports = {
   ExitCode: {
@@ -7,7 +7,7 @@ module.exports = {
     WORKING: 2,
   },
   //ConnectionLink: "mongodb://127.0.0.1:27017/search"
-  ConnectionLink: 'mongodb://mongodb:27017/search',
+  ConnectionLink: "mongodb://mongodb:27017/search",
 };
 module.exports.USER_ARGV_INDEX = 2;
 module.exports.HttpCode = {
@@ -24,7 +24,7 @@ module.exports.BASE_URL = `https://api.github.com/`;
 module.exports.API_PREFIX = `/api`;
 module.exports.Platform = { WEB: `web`, CONSOLE: `console` };
 module.exports.Mock = {
-  city: 'saint-petersburg',
-  lib: 'react',
+  city: "saint-petersburg",
+  lib: "react",
   count: 2,
 };

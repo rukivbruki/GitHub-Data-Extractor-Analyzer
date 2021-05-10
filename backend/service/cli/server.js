@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
 const express = require(`express`);
-const { createRoutes } = require('../api');
+const { createRoutes } = require("../api");
 const { getLogger } = require(`../../service/lib/logger`);
 
 const logger = getLogger({ name: `api` });
@@ -12,9 +12,9 @@ const app = express();
 app.use(express.json());
 
 app.use((req, res, next) => {
-  res.append('Access-Control-Allow-Origin', '*');
-  res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-  res.append('Access-Control-Allow-Headers', 'Content-Type');
+  res.append("Access-Control-Allow-Origin", "*");
+  res.append("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
+  res.append("Access-Control-Allow-Headers", "Content-Type");
   next();
 });
 
@@ -26,7 +26,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use('/api', createRoutes());
+app.use("/api", createRoutes());
 
 module.exports = {
   name: `--server`,
@@ -38,7 +38,7 @@ module.exports = {
       app.listen(port, (err) => {
         if (err) {
           return logger.error(
-            `An error occured on server creation: ${err.message}`,
+            `An error occured on server creation: ${err.message}`
           );
         }
         return logger.info(`Listening to connections on ${port}`);

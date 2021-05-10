@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const { Platform } = require('../const');
+const { Platform } = require("../const");
 const { Cli } = require(`../service/cli`);
 const { ExitCode } = require(`../const`);
 
