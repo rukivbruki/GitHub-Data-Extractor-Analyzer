@@ -26,14 +26,11 @@ async function* fetchCommits(place, id) {
     [id]: _.cloneDeep(dateCreator),
   };
   let nextPage = null;
-  console.log("ПОПАЛИ В ГЕНЕРАТОР", dateObj[id], dateCreator);
   let after = null;
   while (dateObj[id].checkDate()) {
     const date1 = dateObj[id].date1.format("YYYY-MM");
     const date2 = dateObj[id].date2.format("YYYY-MM");
-    console.log(date1, date2, dateCreator.checkDate(), nextPage);
     const queryString1 = `location:${place} created:${date1}..${date2}`;
-    console.log("СМОТРИМ queryString1, after", queryString1, after);
     const query = {
       query: `
   query ($queryString1: String!, $after: String) {
@@ -76,8 +73,6 @@ async function* fetchCommits(place, id) {
 
     const res = await api.postQuery("graphql", query);
     const body = await res.data;
-    console.log(after);
-    console.log(nextPage);
     after = await body.data.result.pageInfo.endCursor;
     nextPage = body.data.result.pageInfo.hasNextPage;
     nextPage === false ? dateObj[id].getDate() : null;
@@ -88,12 +83,9 @@ async function* fetchCommits(place, id) {
 }
 
 const executor = async (answers, ans, logger, webFlag) => {
-  console.log("СМОТРИМ answers.id", ans);
-  const DELAY = 4000;
+  const DELAY = 2000;
   const startTime = moment().unix();
-  console.log(startTime);
   let count = 0;
-  console.log(Number(answers.count));
 
   crawlerData[answers] = {
     progress: 0,

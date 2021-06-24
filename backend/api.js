@@ -4,8 +4,6 @@ const axios = require(`axios`);
 require("dotenv").config();
 const { BASE_URL, TIMEOUT } = require("./const");
 
-// const port = process.env.API_PORT || 3000;
-
 const headers = {
   "content-type": "application/json",
   "User-Agent": "Our script",

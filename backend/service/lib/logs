@@ -486,3 +486,373 @@
     User number: 1
     Remaining limit: "28"
     Login: "s4xack"
+[34mDEBUG[39m	 [2021-06-11 11:05:21.184 +0000] (logger-GitHub/7436 on DESKTOP-9IG2DCJ): [36mUSER SEARCH END[39m
+    line: 1
+[34mDEBUG[39m	 [2021-06-11 11:05:21.773 +0000] (logger-GitHub/7436 on DESKTOP-9IG2DCJ):
+    line: 2
+    User number: 0
+    Remaining limit: "29"
+    Login: "MortyMerr"
+[34mDEBUG[39m	 [2021-06-11 11:05:25.582 +0000] (logger-GitHub/7436 on DESKTOP-9IG2DCJ):
+    line: 3
+    User number: 1
+    Remaining limit: "28"
+    Login: "s4xack"
+[34mDEBUG[39m	 [2021-06-11 11:05:29.563 +0000] (logger-GitHub/7436 on DESKTOP-9IG2DCJ):
+    line: 4
+    User number: 2
+    Remaining limit: "27"
+    Login: "isaac-weisberg"
+[34mDEBUG[39m	 [2021-06-11 11:05:33.667 +0000] (logger-GitHub/7436 on DESKTOP-9IG2DCJ):
+    line: 5
+    User number: 3
+    Remaining limit: "26"
+    Login: "maxim092001"
+[34mDEBUG[39m	 [2021-06-11 11:06:40.743 +0000] (logger-GitHub/21296 on DESKTOP-9IG2DCJ): [36mUSER SEARCH END[39m
+    line: 1
+[34mDEBUG[39m	 [2021-06-11 11:06:41.066 +0000] (logger-GitHub/21296 on DESKTOP-9IG2DCJ):
+    line: 2
+    User number: 0
+    Remaining limit: "29"
+    Login: "MortyMerr"
+[34mDEBUG[39m	 [2021-06-11 11:06:45.118 +0000] (logger-GitHub/21296 on DESKTOP-9IG2DCJ):
+    line: 3
+    User number: 1
+    Remaining limit: "28"
+    Login: "s4xack"
+[34mDEBUG[39m	 [2021-06-11 11:06:49.164 +0000] (logger-GitHub/21296 on DESKTOP-9IG2DCJ):
+    line: 4
+    User number: 2
+    Remaining limit: "27"
+    Login: "isaac-weisberg"
+[34mDEBUG[39m	 [2021-06-11 11:06:53.113 +0000] (logger-GitHub/21296 on DESKTOP-9IG2DCJ):
+    line: 5
+    User number: 3
+    Remaining limit: "26"
+    Login: "maxim092001"
+[34mDEBUG[39m	 [2021-06-11 11:06:57.114 +0000] (logger-GitHub/21296 on DESKTOP-9IG2DCJ):
+    line: 6
+    User number: 4
+    Remaining limit: "25"
+    Login: "hazzus"
+[34mDEBUG[39m	 [2021-06-11 11:08:17.581 +0000] (logger-GitHub/21384 on DESKTOP-9IG2DCJ): [36mUSER SEARCH END[39m
+    line: 1
+[34mDEBUG[39m	 [2021-06-11 11:08:17.942 +0000] (logger-GitHub/21384 on DESKTOP-9IG2DCJ):
+    line: 2
+    User number: 0
+    Remaining limit: "29"
+    Login: "MortyMerr"
+[34mDEBUG[39m	 [2021-06-11 11:08:19.924 +0000] (logger-GitHub/21384 on DESKTOP-9IG2DCJ):
+    line: 3
+    User number: 1
+    Remaining limit: "28"
+    Login: "s4xack"
+[34mDEBUG[39m	 [2021-06-11 11:09:37.187 +0000] (logger-GitHub/16336 on DESKTOP-9IG2DCJ): [36mUSER SEARCH END[39m
+    line: 1
+[34mDEBUG[39m	 [2021-06-11 11:09:37.517 +0000] (logger-GitHub/16336 on DESKTOP-9IG2DCJ):
+    line: 2
+    User number: 0
+    Remaining limit: "29"
+    Login: "MortyMerr"
+[34mDEBUG[39m	 [2021-06-11 11:09:39.554 +0000] (logger-GitHub/16336 on DESKTOP-9IG2DCJ):
+    line: 3
+    User number: 1
+    Remaining limit: "28"
+    Login: "s4xack"
+[34mDEBUG[39m	 [2021-06-11 11:10:41.736 +0000] (logger-GitHub/1228 on DESKTOP-9IG2DCJ): [36mUSER SEARCH END[39m
+    line: 1
+[34mDEBUG[39m	 [2021-06-11 11:10:42.123 +0000] (logger-GitHub/1228 on DESKTOP-9IG2DCJ):
+    line: 2
+    User number: 0
+    Remaining limit: "29"
+    Login: "MortyMerr"
+[34mDEBUG[39m	 [2021-06-11 11:10:44.104 +0000] (logger-GitHub/1228 on DESKTOP-9IG2DCJ):
+    line: 3
+    User number: 1
+    Remaining limit: "28"
+    Login: "s4xack"
+[34mDEBUG[39m	 [2021-06-11 11:11:53.036 +0000] (logger-GitHub/8552 on DESKTOP-9IG2DCJ): [36mUSER SEARCH END[39m
+    line: 1
+[34mDEBUG[39m	 [2021-06-11 11:11:53.388 +0000] (logger-GitHub/8552 on DESKTOP-9IG2DCJ):
+    line: 2
+    User number: 0
+    Remaining limit: "29"
+    Login: "MortyMerr"
+[34mDEBUG[39m	 [2021-06-11 11:11:55.424 +0000] (logger-GitHub/8552 on DESKTOP-9IG2DCJ):
+    line: 3
+    User number: 1
+    Remaining limit: "28"
+    Login: "s4xack"
+[34mDEBUG[39m	 [2021-06-11 11:12:13.540 +0000] (logger-GitHub/5296 on DESKTOP-9IG2DCJ): [36mUSER SEARCH END[39m
+    line: 1
+[34mDEBUG[39m	 [2021-06-11 11:12:13.888 +0000] (logger-GitHub/5296 on DESKTOP-9IG2DCJ):
+    line: 2
+    User number: 0
+    Remaining limit: "27"
+    Login: "MortyMerr"
+[34mDEBUG[39m	 [2021-06-11 11:12:15.871 +0000] (logger-GitHub/5296 on DESKTOP-9IG2DCJ):
+    line: 3
+    User number: 1
+    Remaining limit: "26"
+    Login: "s4xack"
+[34mDEBUG[39m	 [2021-06-11 11:12:50.798 +0000] (logger-GitHub/15204 on DESKTOP-9IG2DCJ): [36mUSER SEARCH END[39m
+    line: 1
+[34mDEBUG[39m	 [2021-06-11 11:12:51.228 +0000] (logger-GitHub/15204 on DESKTOP-9IG2DCJ):
+    line: 2
+    User number: 0
+    Remaining limit: "25"
+    Login: "MortyMerr"
+[34mDEBUG[39m	 [2021-06-11 11:12:53.180 +0000] (logger-GitHub/15204 on DESKTOP-9IG2DCJ):
+    line: 3
+    User number: 1
+    Remaining limit: "24"
+    Login: "s4xack"
+[34mDEBUG[39m	 [2021-06-11 11:12:55.215 +0000] (logger-GitHub/15204 on DESKTOP-9IG2DCJ):
+    line: 4
+    User number: 2
+    Remaining limit: "29"
+    Login: "isaac-weisberg"
+[34mDEBUG[39m	 [2021-06-11 11:12:57.265 +0000] (logger-GitHub/15204 on DESKTOP-9IG2DCJ):
+    line: 5
+    User number: 3
+    Remaining limit: "28"
+    Login: "maxim092001"
+[34mDEBUG[39m	 [2021-06-11 11:12:59.111 +0000] (logger-GitHub/15204 on DESKTOP-9IG2DCJ):
+    line: 6
+    User number: 4
+    Remaining limit: "27"
+    Login: "hazzus"
+[32mINFO[39m	 [2021-06-11 11:31:11.481 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mListening to connections on 5000[39m
+    line: 1
+[32mINFO[39m	 [2021-06-11 11:32:50.929 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 2
+[32mINFO[39m	 [2021-06-11 11:32:51.532 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 3
+[32mINFO[39m	 [2021-06-11 11:32:51.906 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 4
+[34mDEBUG[39m	 [2021-06-11 11:32:52.081 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ): [36mUSER SEARCH END[39m
+    line: 5
+[32mINFO[39m	 [2021-06-11 11:32:52.420 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 6
+[34mDEBUG[39m	 [2021-06-11 11:32:52.441 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 7
+    User number: 0
+    Remaining limit: "29"
+    Login: "TheAsda"
+[32mINFO[39m	 [2021-06-11 11:32:52.920 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 8
+[32mINFO[39m	 [2021-06-11 11:32:53.430 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 9
+[32mINFO[39m	 [2021-06-11 11:32:53.929 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 10
+[32mINFO[39m	 [2021-06-11 11:32:54.429 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 11
+[34mDEBUG[39m	 [2021-06-11 11:32:54.443 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 12
+    User number: 1
+    Remaining limit: "28"
+    Login: "ashugaev"
+[32mINFO[39m	 [2021-06-11 11:32:54.935 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 13
+[32mINFO[39m	 [2021-06-11 11:32:55.450 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 14
+[32mINFO[39m	 [2021-06-11 11:32:55.966 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 15
+[34mDEBUG[39m	 [2021-06-11 11:32:56.468 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 16
+    User number: 2
+    Remaining limit: "27"
+    Login: "AnMatush"
+[32mINFO[39m	 [2021-06-11 11:32:56.482 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 17
+[32mINFO[39m	 [2021-06-11 11:32:56.994 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 18
+[32mINFO[39m	 [2021-06-11 11:33:24.597 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 19
+[32mINFO[39m	 [2021-06-11 11:33:25.103 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 20
+[34mDEBUG[39m	 [2021-06-11 11:33:25.167 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ): [36mUSER SEARCH END[39m
+    line: 21
+[34mDEBUG[39m	 [2021-06-11 11:33:25.519 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 22
+    User number: 0
+    Remaining limit: "26"
+    Login: "TheAsda"
+[34mDEBUG[39m	 [2021-06-11 11:33:27.555 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 23
+    User number: 1
+    Remaining limit: "25"
+    Login: "ashugaev"
+[34mDEBUG[39m	 [2021-06-11 11:33:29.757 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 24
+    User number: 2
+    Remaining limit: "24"
+    Login: "AnMatush"
+[32mINFO[39m	 [2021-06-11 11:34:16.755 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 25
+[32mINFO[39m	 [2021-06-11 11:34:17.225 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 26
+[32mINFO[39m	 [2021-06-11 11:34:17.729 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 27
+[32mINFO[39m	 [2021-06-11 11:34:18.242 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 28
+[32mINFO[39m	 [2021-06-11 11:34:18.757 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 29
+[32mINFO[39m	 [2021-06-11 11:34:19.260 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 30
+[32mINFO[39m	 [2021-06-11 11:34:19.772 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 31
+[32mINFO[39m	 [2021-06-11 11:34:20.285 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 32
+[34mDEBUG[39m	 [2021-06-11 11:34:20.740 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ): [36mUSER SEARCH END[39m
+    line: 33
+[32mINFO[39m	 [2021-06-11 11:34:20.800 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 34
+[34mDEBUG[39m	 [2021-06-11 11:34:21.155 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 35
+    User number: 0
+    Remaining limit: "29"
+    Login: "andreyalexeich"
+[32mINFO[39m	 [2021-06-11 11:34:21.308 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 36
+[32mINFO[39m	 [2021-06-11 11:34:21.808 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 37
+[32mINFO[39m	 [2021-06-11 11:34:22.324 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 38
+[32mINFO[39m	 [2021-06-11 11:34:22.827 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 39
+[34mDEBUG[39m	 [2021-06-11 11:34:23.149 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 40
+    User number: 1
+    Remaining limit: "28"
+    Login: "evg-goncharenko"
+[32mINFO[39m	 [2021-06-11 11:34:23.328 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 41
+[32mINFO[39m	 [2021-06-11 11:34:23.843 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 42
+[32mINFO[39m	 [2021-06-11 11:34:24.349 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 43
+[32mINFO[39m	 [2021-06-11 11:34:24.856 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 44
+[34mDEBUG[39m	 [2021-06-11 11:34:25.070 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 45
+    User number: 2
+    Remaining limit: "27"
+    Login: "MarkCavalli"
+[32mINFO[39m	 [2021-06-11 11:34:25.361 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 46
+[32mINFO[39m	 [2021-06-11 11:34:25.863 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 47
+[32mINFO[39m	 [2021-06-11 11:34:26.371 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 48
+[32mINFO[39m	 [2021-06-11 11:34:26.885 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 49
+[34mDEBUG[39m	 [2021-06-11 11:34:27.105 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 50
+    User number: 3
+    Remaining limit: "26"
+    Login: "cig-skoltech"
+[32mINFO[39m	 [2021-06-11 11:34:27.387 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 51
+[32mINFO[39m	 [2021-06-11 11:34:27.901 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 52
+[32mINFO[39m	 [2021-06-11 11:34:28.402 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 53
+[32mINFO[39m	 [2021-06-11 11:34:28.904 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 54
+[34mDEBUG[39m	 [2021-06-11 11:34:29.115 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 55
+    User number: 4
+    Remaining limit: "25"
+    Login: "ilgonmic"
+[32mINFO[39m	 [2021-06-11 11:34:29.406 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 56
+[32mINFO[39m	 [2021-06-11 11:34:29.918 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 57
+[32mINFO[39m	 [2021-06-11 11:35:25.986 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 58
+[32mINFO[39m	 [2021-06-11 11:35:26.502 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 59
+[32mINFO[39m	 [2021-06-11 11:35:26.998 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 60
+[32mINFO[39m	 [2021-06-11 11:35:27.490 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 61
+[32mINFO[39m	 [2021-06-11 11:35:27.994 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 62
+[32mINFO[39m	 [2021-06-11 11:35:28.490 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 63
+[32mINFO[39m	 [2021-06-11 11:35:28.994 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 64
+[32mINFO[39m	 [2021-06-11 11:35:29.494 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 65
+[32mINFO[39m	 [2021-06-11 11:35:29.991 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 66
+[32mINFO[39m	 [2021-06-11 11:35:30.490 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 67
+[32mINFO[39m	 [2021-06-11 11:35:30.988 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 68
+[34mDEBUG[39m	 [2021-06-11 11:35:31.199 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ): [36mUSER SEARCH END[39m
+    line: 69
+[32mINFO[39m	 [2021-06-11 11:35:31.494 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 70
+[34mDEBUG[39m	 [2021-06-11 11:35:31.672 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 71
+    User number: 0
+    Remaining limit: "29"
+    Login: "andreyalexeich"
+[32mINFO[39m	 [2021-06-11 11:35:31.996 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 72
+[32mINFO[39m	 [2021-06-11 11:35:32.498 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 73
+[32mINFO[39m	 [2021-06-11 11:35:32.990 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 74
+[32mINFO[39m	 [2021-06-11 11:35:33.489 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 75
+[34mDEBUG[39m	 [2021-06-11 11:35:33.623 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 76
+    User number: 1
+    Remaining limit: "28"
+    Login: "evg-goncharenko"
+[32mINFO[39m	 [2021-06-11 11:35:33.985 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 77
+[32mINFO[39m	 [2021-06-11 11:35:34.500 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 78
+[32mINFO[39m	 [2021-06-11 11:35:34.999 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 79
+[32mINFO[39m	 [2021-06-11 11:35:35.485 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 80
+[34mDEBUG[39m	 [2021-06-11 11:35:35.544 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 81
+    User number: 2
+    Remaining limit: "27"
+    Login: "MarkCavalli"
+[32mINFO[39m	 [2021-06-11 11:35:35.998 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 82
+[32mINFO[39m	 [2021-06-11 11:35:36.484 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 83
+[32mINFO[39m	 [2021-06-11 11:35:36.989 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 84
+[32mINFO[39m	 [2021-06-11 11:35:37.488 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 85
+[34mDEBUG[39m	 [2021-06-11 11:35:37.567 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 86
+    User number: 3
+    Remaining limit: "26"
+    Login: "cig-skoltech"
+[32mINFO[39m	 [2021-06-11 11:35:37.988 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 87
+[32mINFO[39m	 [2021-06-11 11:35:38.485 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 88
+[32mINFO[39m	 [2021-06-11 11:35:39.000 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 89
+[32mINFO[39m	 [2021-06-11 11:35:39.499 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 90
+[34mDEBUG[39m	 [2021-06-11 11:35:39.621 +0000] (logger-api/6264 on DESKTOP-9IG2DCJ):
+    line: 91
+    User number: 4
+    Remaining limit: "25"
+    Login: "ilgonmic"
+[32mINFO[39m	 [2021-06-11 11:35:39.997 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 200[39m
+    line: 92
+[32mINFO[39m	 [2021-06-11 11:35:40.493 +0000] (api/6264 on DESKTOP-9IG2DCJ): [36mResponse status code 304[39m
+    line: 93

@@ -6,7 +6,6 @@ const { Platform } = require(`../../../const`);
 
 const startService = (data) => {
   if (data) {
-    console.log(data);
     const { Cli } = require("../../cli");
     Cli["--crawler"].run(
       ["debug"],
