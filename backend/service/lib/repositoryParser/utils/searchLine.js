@@ -22,7 +22,6 @@ module.exports = async function searchLine(searchFor, params) {
         return {}
     }
     const regExp1 = /.*(:)\d+(:)+/g;
-    const regExp2 = /.*(=)\d+(=)+/g;
     return result
         .split("\n")
         .filter(Boolean)
@@ -30,10 +29,6 @@ module.exports = async function searchLine(searchFor, params) {
             const regExp1Result = line.match(regExp1);
             if (regExp1Result && regExp1Result.length > 0) {
                 const [fileName, lineNumber] = regExp1Result.join("").split(":");
-                addToObject(result, fileName, Number(lineNumber));
-            } else {
-                const regExp2Result = line.match(regExp2);
-                const [fileName, lineNumber] = regExp2Result.join("").split("=");
                 addToObject(result, fileName, Number(lineNumber));
             }
             return result;

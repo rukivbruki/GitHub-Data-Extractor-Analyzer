@@ -1,22 +1,42 @@
 {
     "averageKeywordPositionForReact": [
-        19,
-        15,
-        11.526315789473685
+        63,
+        14.071428571428571,
+        10.642857142857142
     ],
     "averageOccurenceForReact": [
-        1,
-        3.6,
-        2.7142857142857144
+        1.5,
+        2.8,
+        2
     ],
-    "numberOfFilesForReact": [
-        1,
+    "numberOfFilesForReactReact": [
+        2,
         5,
         7
     ],
     "averageFileSizeForReact": [
-        66,
+        77.5,
         36,
         29.714285714285715
+    ],
+    "averageKeywordPositionForclassName": [
+        90,
+        8.5,
+        8
+    ],
+    "averageOccurenceForclassName": [
+        1,
+        4,
+        1
+    ],
+    "numberOfFilesForReactclassName": [
+        1,
+        1,
+        1
+    ],
+    "averageFileSizeForclassName": [
+        89,
+        25,
+        15
     ]
 }
