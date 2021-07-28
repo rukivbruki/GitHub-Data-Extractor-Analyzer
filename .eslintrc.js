@@ -8,7 +8,7 @@ module.exports = {
   rules: {
     "prettier/prettier": "error",
     "max-depth": ["error", 3],
-    complexity: ["error", 2],
+    complexity: ["error", 5],
   },
   parser: "babel-eslint",
 };

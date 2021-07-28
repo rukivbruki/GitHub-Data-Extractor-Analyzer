@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/backend/service/lib/repositoryParser/Source/letters-social" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/backend/service/lib/repositoryParser/Source/react-hooks-in-action" vcs="Git" />
   </component>
 </project>
