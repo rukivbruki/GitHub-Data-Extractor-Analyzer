@@ -17,6 +17,9 @@ async function averageKeywordPosition({ keyword, searchLineResult }) {
     : await searchLine(keyword);
   const sumOfArrayValues = (array) => array.reduce((sum, value) => sum + value);
   const numberOfOccurences = getSumOfOccurences(result);
+  if (numberOfOccurences === 0) {
+    return 0;
+  }
   return (
     Object.values(result).reduce(
       (acc, occurences) => acc + sumOfArrayValues(occurences),
@@ -35,6 +38,9 @@ async function averageOccurence({ keyword, searchLineResult }) {
     : await searchLine(keyword);
   const numberOfOccurences = getSumOfOccurences(result);
   const numberOfFiles = Object.keys(result).length;
+  if (numberOfFiles === 0) {
+    return 0;
+  }
   return numberOfOccurences / numberOfFiles;
 }
 
@@ -68,6 +74,9 @@ async function averageFileSize({ keyword, searchLineResult, cwd }) {
   );
   const sumOfLines = (lineNumbers) =>
     lineNumbers.reduce((acc, lineNumber) => acc + lineNumber, 0);
+  if (numberOfFiles === 0) {
+    return 0;
+  }
   return sumOfLines(lineNumbers) / numberOfFiles;
 }
 

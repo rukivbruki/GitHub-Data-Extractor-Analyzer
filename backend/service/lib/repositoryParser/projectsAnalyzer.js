@@ -35,7 +35,7 @@ const stringifyMap = (map, repositoryParser) => {
 }
 
 const getUserMetricsParams = {
-    folder: '/Users/nikitavozisov/Public/Projects/JavaScript_Projects/react-action/*/',
+    folder: '/Users/nikitavozisov/Public/Projects/JavaScript_Projects/GitHub-API-research-tool/backend/service/lib/repositoryParser/Source/*/',
     keywords: [
         'React',
         'className',
@@ -69,7 +69,6 @@ class ProjectsAnalyzer {
         const projects = (await execute(`ls -d ${rootFolder}`))
             .split("\n")
             .filter(Boolean);
-        console.log(projects);
         const finalData = new Map();
         let repoParser;
         for (const directory of projects) {
@@ -92,7 +91,9 @@ class ProjectsAnalyzer {
 
 const pa = new ProjectsAnalyzer();
 
-pa.analyzeByLinks('/Users/nikitavozisov/Public/Projects/JavaScript_Projects/GitHub-API-research-tool/backend/service/lib/repositoryParser/repos', [
-    'https://github.com/Nitvex/itmo-js-course',
-    'https://github.com/Nitvex/react-app'
-]);
+// pa.analyzeByLinks('/Users/nikitavozisov/Public/Projects/JavaScript_Projects/GitHub-API-research-tool/backend/service/lib/repositoryParser/repos', [
+//     'https://github.com/Nitvex/itmo-js-course',
+//     'https://github.com/Nitvex/react-app'
+// ]);
+
+pa.analyzeByPath(getUserMetricsParams.folder, getUserMetricsParams.keywords);
