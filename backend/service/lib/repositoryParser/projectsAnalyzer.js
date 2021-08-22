@@ -76,10 +76,10 @@ class ProjectsAnalyzer {
             for (const keyword of keywords) {
                 const searchLineResult = await searchLine(keyword, { cwd: directory });
                 repoParser
-                    .addFilter(`averageKeywordPositionFor${keyword}`, () => averageKeywordPosition({ searchLineResult, cwd: directory }))
-                    .addFilter(`averageOccurenceFor${keyword}`, () => averageOccurence({ searchLineResult, cwd: directory }))
-                    .addFilter(`numberOfFilesForReact${keyword}`, () => getNumberOfFiles({ searchLineResult, cwd: directory }))
-                    .addFilter(`averageFileSizeFor${keyword}`, () => averageFileSize({ searchLineResult, cwd: directory }))
+                    .addFilter(`average-keyword-position-for-${keyword}`, () => averageKeywordPosition({ searchLineResult, cwd: directory }))
+                    .addFilter(`average-occurrence-for-${keyword}`, () => averageOccurence({ searchLineResult, cwd: directory }))
+                    .addFilter(`number-of-files-for-${keyword}`, () => getNumberOfFiles({ searchLineResult, cwd: directory }))
+                    .addFilter(`average-file-size-for-${keyword}`, () => averageFileSize({ searchLineResult, cwd: directory }))
             }
             const result = await repoParser.execute();
             addToData(finalData, result);
