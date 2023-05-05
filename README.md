@@ -1,42 +1,37 @@
-**ЗАПУСК КОНТЕЙНЕРИЗОВАННОГО ПРИЛОЖЕНИЯ:**
+LAUNCH OF CONTAINERIZED APPLICATION:
 
-_Консольная утилита:_
+Console utility:
 
-1. Клонируйте репозиторий,
-2. Получите access token на платформе gitHub (https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token),
-3. Добавьте в корень папки backend файл .env и пропишите туда директиву TOKEN = your_token,
-4. Создайте и запустите контейнер приложения (не закрывайте вкладку):
+1. Clone the repository.
+2. Obtain an access token on the GitHub platform (https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token).
+3. Add a .env file in the root folder of the backend and include the directive TOKEN = your_token.
+4. Create and run the application container (do not close the tab):
+    - docker-compose build
+    - docker-compose up
+5. In a new tab from the project directory, run the command `docker ps` and copy the ID of the running container (container_ID).
+6. Run the command `docker exec -it container_ID /bin/bash`.
+7. Run the command `npm run crawler`.
+Note: To successfully save data to the local machine, you need to grant Docker access to the folder where MongoDB saves data. In our case, this is: /usr/local/var/mongodb
 
-- `docker-compose build`
-- `docker-compose up`
+Web client:
 
-5. В новой вкладке из директории с проектом выполните команду `docker ps` и скопируйте ID
- запущенного контейнер (container_ID),
-6. Выполните команду `docker exec -it container_ID /bin/bash`,
-7. выполните команду `npm run crawler`.
+1. Follow steps 1-3 from the console application launch instruction.
+2. Go to http://localhost:8080/ and use the web interface to start the application.
 
- **Примечание: для успешного сохранения данных на локальной машине необходимо дать Docker права на папку, в которую MongoDB сохраняет данные. В нашем случае это: /usr/local/var/mongodb**
+LAUNCH OF LOCAL APPLICATION:
 
-_Веб клиент:_
+Console utility:
 
-1. Выполните действия 1-3 из инструкции по запуску консольного приложения?
-2. Перейдите по адресу http://localhost:8080/ и при помощи веб интерфейса выполнить запуск приложения.
+1. Install the npm package manager, Node.js platform, and MongoDB database in your system.
+2. Start MongoDB.
+3. Follow steps 1-3 from the containerized application launch instruction.
+4. From the backend folder, run the command `node service/service --crawler` (you can specify the logging level as the second parameter, for example, DEBUG or ERROR).
 
-**ЗАПУСК ЛОКАЛЬНОГО ПРИЛОЖЕНИЯ**
+Web client:
 
-_Консольная утилита:_
-
-1. Установите в систему менеджер пакетов npm, программную платформу Node.js и базу данных MongoDB,
-2. Запустите MongoDB,
-3. Выполните шаги 1-3 из инструкции для запуска контейнеризованного приложения,
-4. Из папки backend выполните команду node service/service --crawler (вторым параметром можно указать уровень логирования, например, DEBUG или ERROR),
-
-_Веб клиент:_
-
-1. Установите в систему менеджер пакетов npm, программную платформу Node.js и базу данных MongoDB,
-2. Запустите MongoDB,
-3. Выполните шаги 1-3 из инструкции для запуска контейнеризованного приложения,
-4. Из папки backend выполните команду node service/service --server (вторым параметром можно указать уровень логирования, например, DEBUG или ERROR),
-5. Из папки frontend выполните команду npm run serve,
-6. Перейдите по адресу http://localhost:8080/ и при помощи веб интерфейса выполнить запуск приложения.
-
+1. Install the npm package manager, Node.js platform, and MongoDB database in your system.
+2. Start MongoDB.
+3. Follow steps 1-3 from the containerized application launch instruction.
+4. From the backend folder, run the command `node service/service --server` (you can specify the logging level as the second parameter, for example, DEBUG or ERROR).
+5. From the frontend folder, run the command `npm run serve`.
+6. Go to http://localhost:8080/ and use the web interface to start the application.
